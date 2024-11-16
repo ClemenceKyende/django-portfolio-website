@@ -1,0 +1,284 @@
+/* Basic resets */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container-fluid {
+    padding: 30px;
+}
+
+/* Title styles */
+h1, h2, h3 {
+    color: #007BFF;
+    font-family: Arial, sans-serif;
+    margin: 30px 0 20px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+/* Grid container styles */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "navbar"
+        "header"
+        "skills-hobbies"
+        "footer";
+    gap: 20px;
+}
+
+/* Navbar styles */
+#navbarDiv {
+    grid-area: navbar;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+#navbarDiv .nav-link {
+    color: #007BFF;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+#navbarDiv .nav-link:hover {
+    color: #fff;
+    background-color: #007BFF;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link.active {
+    background-color: #fff;
+    font-weight: bold !important;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Header styles */
+#headerDiv {
+    grid-area: header;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* General Styles for Skills, Hobbies, Achievements, and Projects Section */
+#skills-hobbies-achievements-projects {
+    background-color: #f8f9fa; /* Light background */
+    padding: 30px;
+    border-radius: 8px;
+}
+
+#skills-hobbies-achievements-projects h3 {
+    color: #007bff; /* Blue color for titles */
+    font-size: 1.5rem; /* Larger font size for titles */
+    margin-bottom: 15px; /* Space below the title */
+    text-align: center; /* Center align the titles */
+    font-weight: bold;
+}
+
+/* Styles for Skills, Hobbies, Achievements columns (without shadow on title) */
+#skills-hobbies-achievements-projects .col-sm-12 {
+    margin-bottom: 20px; /* Space between columns */
+}
+
+/* Container for each section's content with shadow */
+#skills-hobbies-achievements-projects .content-box {
+    background-color: #ffffff; /* White background for each content box */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for each content box */
+}
+
+/* Remove numbering from the list and style the items */
+#skills-hobbies-achievements-projects ul {
+    list-style: none; /* Remove bullet or numbering */
+    padding-left: 0; /* Remove default padding */
+}
+
+#skills-hobbies-achievements-projects ul li {
+    color: #333; /* Dark text for better readability */
+    font-size: 1rem; /* Set font size for list items */
+    margin-bottom: 10px; /* Space between list items */
+    line-height: 1.6; /* Improve line spacing for readability */
+}
+
+/* Projects section styling (with title outside shadow box) */
+#skills-hobbies-achievements-projects .project {
+    background-color: #ffffff; /* White background for each project */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for projects */
+    margin-bottom: 20px; /* Space between projects */
+}
+
+/* Project title styling */
+#skills-hobbies-achievements-projects .project h4 {
+    color: #007bff; /* Blue color for project titles */
+    font-size: 1.25rem; /* Slightly larger project title */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+/* Project description styling */
+#skills-hobbies-achievements-projects .project p {
+    color: #555; /* Dark text for description */
+    font-size: 1rem; /* Font size for project description */
+    margin-bottom: 10px; /* Space after description */
+    line-height: 1.6; /* Better line spacing */
+}
+
+/* Link styling in projects */
+#skills-hobbies-achievements-projects .project a {
+    color: #007bff; /* Blue color for the links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+}
+
+#skills-hobbies-achievements-projects .project a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Remove underline for project links */
+.content-box a {
+    text-decoration: none; /* Removes the underline */
+    color: #007bff; /* You can change this to your preferred link color */
+}
+
+.content-box a:hover {
+    text-decoration: underline; /* Optional: Adds underline on hover for better UX */
+}
+
+
+/* Footer styles */
+#footerDiv {
+    grid-area: footer;
+    padding: 20px;
+    background-color: #007bff; /* Blue theme color */
+    color: #f8f9fa; /* White text for contrast */
+    border-radius: 8px;
+    text-align: center; /* Center-align content */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Links styling */
+#footerDiv a {
+    text-decoration: none; /* Remove underline */
+    color: #f8f9fa; /* White color for links */
+    font-weight: 500; /* Slightly bold links for visibility */
+    padding: 0 10px; /* Add space between links */
+    transition: color 0.3s, transform 0.3s; /* Smooth hover effects */
+}
+
+/* Hover effect for links */
+#footerDiv a:hover {
+    color: #ffdd57; /* Subtle yellow color for hover effect */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Separator between links */
+#footerDiv .separator {
+    color: #f8f9fa; /* Same color as text */
+    margin: 0 5px; /* Space around the separator */
+}
+
+/* Additional text styling */
+#footerDiv p {
+    margin: 10px 0; /* Space around footer text */
+    font-size: 0.9rem; /* Smaller font size for secondary text */
+}
+
+/* Contact Form Section */
+.container.mt-5 {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Forms */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    padding: 10px;  /* Adjusted padding */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    height: auto;  /* Adjusted height */
+    box-sizing: border-box; /* Include padding and border in height */
+}
+
+.form-group input::placeholder,
+.form-group select::placeholder,
+.form-group textarea::placeholder {
+    color: #888;  /* Ensure placeholder is visible */
+}
+
+button[type="submit"] {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-areas:
+                "navbar"
+                "header"
+                "skills-hobbies"
+                "footer";
+    }
+}
+
+@media (min-width: 601px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}

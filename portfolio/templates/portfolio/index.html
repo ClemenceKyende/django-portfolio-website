@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to my portfolio. Discover my skills, hobbies, achievements, and projects.">
+    <title>My Portfolio</title>
+    {% load static %}
+    <!-- Bootstrap and Custom CSS -->
+    <link href="{% static 'bootstrap/css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrap/css/bootstrap-grid.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrap/css/bootstrap-grid.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Navbar -->
+        <div id="navbarDiv">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="{% url 'portfolio:index' %}">
+                        <img src="{% static 'assets/mylogo.png' %}" alt="Clemence Kyende Logo" width="70" height="70">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="{% url 'portfolio:index' %}">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#skills-hobbies-achievements-projects">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'portfolio:contact' %}">Contact Me</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Header Section with Centered Image -->
+        <div id="headerDiv" class="text-center mt-4">
+            <img src="{% static 'assets/myimage.jpg' %}" alt="Clemence Kyende Profile Picture" class="img-fluid" style="max-width: 200px; border-radius: 50%;">
+            <h1 class="mt-3" style="font-size: 1.4rem;">Innovating at the Intersection of Tech and Relations.</h1>
+        </div>
+
+        <!-- Skills, Hobbies, Achievements, and Projects Section -->
+<div id="skills-hobbies-achievements-projects" class="container mt-5">
+    <div class="row">
+        <!-- Skills Column -->
+        <div class="col-sm-12 col-md-3">
+            <h3>Skills</h3>
+            <div class="content-box">
+                <ul>
+                    <li>Web Development (HTML, CSS, JavaScript, Bootstrap)</li>
+                    <li>Mobile App Development (Flutter, Dart)</li>
+                    <li>Python Programming</li>
+                    <li>Database Management (SQL, MySQL)</li>
+                    <li>Customer Service & Relationship Management</li>
+                    <li>Problem-solving and Research</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Hobbies Column -->
+        <div class="col-sm-12 col-md-3">
+            <h3>Hobbies</h3>
+            <div class="content-box">
+                <ul>
+                    <li>Exploring Technology Trends</li>
+                    <li>Problem Solving</li>
+                    <li>Customer Service</li>
+                    <li>Digital Innovation</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Achievements Column -->
+        <div class="col-sm-12 col-md-3">
+            <h3>Achievements</h3>
+            <div class="content-box">
+                <ul>
+                    <li><strong>Fully Funded Software Development Scholarship</strong> at PLP Academy and eMobilis (2024): Selected for an exclusive program to advance skills in software development.</li>
+                    <li><strong>Customer Service Excellence</strong> at Kenya Bureau of Standards (KEBS) & Kenya Red Cross Society: Recognized for outstanding service and strong relationship management in high-stakes environments.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Projects Column -->
+        <div class="col-sm-12 col-md-3">
+            <h3>Projects</h3>
+            <div class="content-box">
+                <h4>TimeWise: Task Management App</h4>
+                <p><strong>Description:</strong> TimeWise is a dynamic task management app designed to help users manage daily, weekly, and monthly tasks, with features like task prioritization, reminders, time tracking, and a Pomodoro timer.</p>
+                <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, MongoDB, Node.js</p>
+                <a href="https://github.com/ClemenceKyende/PLP-Final-Project.git" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Footer Section -->
+        <div id="footerDiv" class="text-center mt-5">
+            <p>Follow me on social media:</p>
+            <a href="https://github.com/ClemenceKyende" target="_blank" class="mx-2">GitHub</a> |
+            <a href="https://www.linkedin.com/in/clemence-mwende-ba231b1b9" target="_blank" class="mx-2">LinkedIn</a>
+            <p>&copy; 2024 Clemence Kyende | Portfolio Website</p>
+        </div>
+    </div>
+
+</body>
+</html>

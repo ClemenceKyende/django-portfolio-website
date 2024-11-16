@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact me through my portfolio. I'd love to hear from you!">
+    <title>Contact Me - My Portfolio</title>
+    {% load static %}
+    <!-- Link to Bootstrap -->
+    <link href="{% static 'bootstrap/css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrap/css/bootstrap-grid.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrap/css/bootstrap-grid.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="grid-container">
+            <!-- Navbar -->
+<div id="navbarDiv">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="{% static 'portfolio/assets/mylogo.png' %}" alt="Clemence Kyende Logo" width="70" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'portfolio:index' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'portfolio:index' %}#skills-hobbies-achievements-projects">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'portfolio:contact' %}">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+  <!-- Contact Form -->
+        <div class="container mt-5">
+    <h2 class="text-center mb-4">Get in Touch</h2>
+    <form method="POST">
+        {% csrf_token %}
+
+    <div class="form-group">
+        <label for="{{ form.name.id_for_label }}">Name</label>
+        {{ form.name }}
+    </div>
+
+    <div class="form-group">
+        <label for="{{ form.email.id_for_label }}">Email</label>
+        {{ form.email }}
+    </div>
+
+    <div class="form-group">
+        <label for="{{ form.phone.id_for_label }}">Phone</label>
+        {{ form.phone }}
+    </div>
+
+    <div class="form-group">
+        <label for="{{ form.message.id_for_label }}">Message</label>
+        {{ form.message }}
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+        </div>
+
+            <!-- Footer Section -->
+        <div id="footerDiv" class="text-center mt-5">
+            <p>Follow me on social media:</p>
+            <a href="https://github.com/ClemenceKyende" target="_blank" class="mx-2">GitHub</a> |
+            <a href="https://www.linkedin.com/in/clemence-mwende-ba231b1b9" target="_blank" class="mx-2">LinkedIn</a>
+            <p>&copy; 2024 Clemence Kyende | Portfolio Website</p>
+        </div>
+    </div>
+</body>
+</html>

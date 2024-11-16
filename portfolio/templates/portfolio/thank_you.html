@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you for contacting me. I will respond soon!">
+    <title>Thank You - My Portfolio</title>
+    {% load static %}
+    <!-- Link to Bootstrap CSS -->
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <!-- Main content container -->
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="text-center p-5 shadow-sm rounded bg-white">
+            <h1 class="display-4 text-success">Thank You!</h1>
+            <p class="lead">Your message has been successfully received. I'll get back to you as soon as possible!</p>
+            <a href="{% url 'portfolio:index' %}" class="btn btn-primary mt-3">Return to Home Page</a>
+        </div>
+    </div>
+
+</body>
+</html>
