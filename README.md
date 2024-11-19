@@ -118,4 +118,5 @@ Each submission is validated and stored in the database. Upon submission, users 
 **SQLite** - Development database (replaceable with other options like PostgreSQL).
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). See the LICENSE file for more details.
+
