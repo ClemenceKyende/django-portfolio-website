@@ -18,53 +18,64 @@ Follow these steps to run the project locally:
 Clone this repository to your local machine
 git clone  https://github.com/ClemenceKyende/django-portfolio-website.git
 
-**2. Create a Project Directory**
+### 2. Create a Project Directory
+
 Navigate to the directory and set up the environment:
 mkdir django_portfolio
 cd django_portfolio
 
-**Install Dependencies**
+### Install Dependencies
+
 To install all necessary dependencies for this project, run the following command in your terminal or command prompt.
 pip install -r requirements.txt
 
-**3. Set Up a Virtual Environment**
+### 3. Set Up a Virtual Environment
+
 Create and activate a virtual environment:
 
 **Windows**
+
 python -m venv venv
 venv\Scripts\activate
 
 **Mac/Linux**
+
 python3 -m venv venv
 source venv/bin/activate
 
-**4.Install Django**
+### 4.Install Django
+
 Install Django and other required packages
 pip install django
 
-**5. Create the Django Project**
+### 5. Create the Django Project**
+
 Start a new Django project
 django-admin startproject myportfolio .
 
-**6. Set Up Your Django App**
+### 6. Set Up Your Django App
+
 Create a new app for the portfolio
 python manage.py startapp portfolio
 
-**7. Set Up the Database**
+### 7. Set Up the Database
+
 Apply migrations to set up the database
 python manage.py migrate
 
-**8. Create a Superuser (Optional)**
+### 8. Create a Superuser (Optional)
+
 To access the admin panel, create a superuser
 python manage.py createsuperuser
 Follow the prompts to set up credentials.
 
-**9. Run the Development Server**
+### 9. Run the Development Server
+
 Start the development server
 python manage.py runserver
 Visit the website at http://127.0.0.1:8000/.
 
-**Project Structure**
+## Project Structure
 
 django_portfolio/
 ├── myportfolio/                  # Main project folder
@@ -81,18 +92,26 @@ django_portfolio/
 ├── README.md                     # Project documentation 
 
 
-**Contact Form Submission**
+## Contact Form Submission
+
 The contact form includes the following fields.
 **Name**
+
 **Email**
+
 **Phone**
+
 **Message**
+
 Each submission is validated and stored in the database. Upon submission, users are redirected to a "Thank You" page.
 
-**Technologies Used**
+## Technologies Used
+
 **Django** - High-level Python web framework.
+
 **Bootstrap** - CSS framework for responsive design.
+
 **SQLite** - Development database (replaceable with other options like PostgreSQL).
 
-**License**
+## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
