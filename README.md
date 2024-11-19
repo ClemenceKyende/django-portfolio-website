@@ -16,17 +16,21 @@ Follow these steps to run the project locally:
 ### 1. Clone the Repository
 
 Clone this repository to your local machine
+
 git clone  https://github.com/ClemenceKyende/django-portfolio-website.git
 
 ### 2. Create a Project Directory
 
 Navigate to the directory and set up the environment:
+
 mkdir django_portfolio
+
 cd django_portfolio
 
 ### Install Dependencies
 
 To install all necessary dependencies for this project, run the following command in your terminal or command prompt.
+
 pip install -r requirements.txt
 
 ### 3. Set Up a Virtual Environment
